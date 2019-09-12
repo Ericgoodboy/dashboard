@@ -1,6 +1,6 @@
 <template>
   <div>
-    <canvas id="canvas"></canvas>
+    <canvas id="canvasb"></canvas>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   name: "d-star",
   mounted() {
-    let canvas = document.getElementById("canvas");
+    let canvas = document.getElementById("canvasb");
     let ctx = canvas.getContext("2d");
     let intervlTime = 3;
     const pointNum = 200;
@@ -119,7 +119,7 @@ export default {
 </script>
 
 <style scoped>
-#canvas{
+#canvasb{
             margin: 0;
             padding: 0;
             border: 0;

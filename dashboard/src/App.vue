@@ -4,6 +4,10 @@
     <v-leftmenu>
     </v-leftmenu>
     <v-star></v-star>
+    
+      <router-view  class="clearfix"></router-view>
+    
+    
   </div>
 </template>
 
@@ -11,12 +15,17 @@
 import header from './components/header/header.vue'
 import star from './components/background/star.vue'
 import leftmenuVue from './components/letfmenu/leftmenu.vue';
+// import visitor from './components/tables/visitortable.vue'
+// import tableContainerVue from './components/tables/tableContainer.vue';
+
 export default {
   name: 'app',
   components: {
     "v-header":header,
     'v-star':star,
-    "v-leftmenu":leftmenuVue
+    "v-leftmenu":leftmenuVue,
+    // 'v-visitor':visitor,
+    // "t-container":tableContainerVue
   }
 }
 </script>

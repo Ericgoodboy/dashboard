@@ -3,7 +3,7 @@
         <div class="items">
             <ul>
                 <li class="item" v-for="item in items" :key="item.id">
-                    {{ item.name }}
+                    <router-link :to="item.routerLink">{{ item.name }}</router-link>
                 </li>
             </ul>
         </div>
@@ -11,16 +11,17 @@
 </template>
 
 <script>
+    
     export default {
         name:"b-leftmenu",
         data(){
             return{
                 items:[
                     {
-                        name:"mayeyeBlog",id:1,
+                        name:"Summary",id:1,routerLink:"/summary"
                     },
                     {
-                        name:"mayeyeBlog",id:2
+                        name:"Content",id:2,routerLink:"/content"
                     }
                 ]
             }
@@ -88,6 +89,7 @@ margin: 0%;
     width: 100%;
     height: 50px;
     line-height: 50px;
+    text-decoration: none;
 }
 .item:hover{
     text-shadow: 0 0 2px #389f;
