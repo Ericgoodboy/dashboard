@@ -108,14 +108,17 @@ export default {
     },
     getTagMap(){
       let that = this;
-      // window.console.log("post");
+      window.console.log("get target");
+      window.console.log("get target 1");
       axios({
         method: "post",
-        url: "/get/tags ",
+        url: "/get/tags",
       }).then(function(res){
+          window.console.log("get target 2");
           window.console.log(res.data)
           this.mapDtype = res.data
       }).catch(function(){
+        window.console.log("获取taget失败")
         that.$toast({
             text: "获取taget失败",
             type: "danger",
@@ -283,5 +286,9 @@ button:hover {
 .title:hover::before {
   width: 80%;
   height: 1px;
+}
+.mavonEditor {
+  width: 100%;
+  height: 100%;
 }
 </style>

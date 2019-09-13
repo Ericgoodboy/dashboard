@@ -35,13 +35,13 @@
         
         data(){
             return{
-                theader:["url","总访问次数","日访问"],
+                theader:["id","title","md","top","saw","author"],
                 tbody:[
-                    {data:[1,2,3]},
-                    {data:[1,2,3]},
-                    {data:[1,2,3]},
-                    {data:[1,2,3]},
-                    {data:[1,2,3]}
+                    {data:["id","title","md","top","saw","author"]},
+                    {data:["id","title","md","top","saw","author"]},
+                    {data:["id","title","md","top","saw","author"]},
+                    {data:["id","title","md","top","saw","author"]},
+                    {data:["id","title","md","top","saw","author"]}
                 ]
             }
         },
@@ -90,6 +90,9 @@ margin: 0%;
     box-sizing: border-box;
     line-height: 30px;
     cursor: pointer;
+    color: #aaa;
+    border-bottom: #999 1px solid;
+
 }
 .t-header li:hover{
     text-shadow: 0 0 3px #369;

@@ -6,6 +6,8 @@ import psummary from './components/pages/summary'
 import pcontent from './components/pages/content'
 import peditor from './components/pages/editorPage'
 import 'mavon-editor/dist/css/index.css'
+import toastRegistry from './toast/index'
+Vue.use(toastRegistry)
 // import ECharts from 'vue-echarts'
 // import 'echarts/lib/chart/line'
 // import 'echarts/lib/chart/pie'
