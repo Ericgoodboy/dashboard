@@ -22,6 +22,9 @@
                     },
                     {
                         name:"Content",id:2,routerLink:"/content"
+                    },
+                    {
+                        name:"Editor",id:3,routerLink:"/editor"
                     }
                 ]
             }
